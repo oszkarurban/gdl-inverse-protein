@@ -1,0 +1,36 @@
+name: pifold_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - foldseek
+  - aria2
+  - gawk
+  - openssl
+  - curl
+  - pip:
+      - --find-links https://data.pyg.org/whl/torch-2.4.1+cu121.html
+      - torch==2.4.1
+      - torch-geometric==2.6.1
+      - torch-scatter==2.1.2
+      - transformers==4.46.3
+      - datasets==3.1.0
+      - accelerate==1.0.1
+      - bitsandbytes==0.45.5
+      - huggingface-hub==0.36.1
+      - peft==0.13.2
+      - trl==0.11.4
+      - wandb==0.24.2
+      - pandas==2.0.3
+      - numpy==1.23.5
+      - scipy==1.10.1
+      - mini3di==0.2.1
+      - pydantic==2.10.6
+      - rich==14.3.2
+      - tqdm==4.67.3
+      - pyyaml==6.0.3
+
+
